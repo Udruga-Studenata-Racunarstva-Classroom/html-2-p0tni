@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FCC form vjezba</title>
+	<link rel="stylesheet" type="text/css" href="survey-style2.css"> 
+</head>
+<body>
+
+	<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+	<header>
+		<h1 id="title">FCC Survey Form</h1>
+		<p id="description"> Thanks for your time</p>
+	</header> 
+
+	<form id="survey-form">
+		<label for="name" id="name-label">Name</label>
+		<input type="text" id="name"  placeholder="Enter your name" required>
+		
+	  
+		<label for="email" id="email-label">E-mail</label>
+		<input type="email" id="email" placeholder="Enter your e-mail" required>
+		
+	  
+		<label for="number" id="number-label">Age</label>
+		<input type="number" id="number" placeholder="Age" min="8" max="100">
+  
+  
+		<label for="dropdown" id="dropdown-label"> Role description</label>
+			<select id="dropdown">
+				<option selected="selected" disabled> Pick a roll</option>
+				<option value="student">Student</option>
+				<option value="senior">Senior</option>
+			</select>
+    
+		<label for="radios" id="radio-label">Would you recommend us to a friend?</label>
+			<section id="radio-buttons">
+				<label><input type="radio" id="defin" name="radio-option" value="definitely">Definitely</label>
+				<label><input type="radio" id="mb" name="radio-option" value="maybe">Maybe</label>
+				<label><input type="radio" id="nots" name="radio-option" value="not_sure">Not sure</label>
+				<label><input type="radio" id="naa" name="radio-option" value="not_at_all">Not at all</label>
+			</section>
+		<label for="checkboxes" id="checkbox-label">What would you like to see improved?</label>
+			<section id="check-buttons">
+				<label><input type="checkbox" id="fend" value="front-end">Front-end</label>
+				<label><input type="checkbox" id="bend" value="back-end">Back-end</label>
+				<label><input type="checkbox" id="vids" value="videos">Videos</label>
+				<label><input type="checkbox" id="wikpd" value="wiki">Wiki</label>
+				<label><input type="checkbox" id="frm" value="forum">Forum</label>
+				<label><input type="checkbox" id="dtvis" value="data-vis">Data visualization</label>
+				
+			</section>
+		<label>Any comments or suggestions?<label>
+			<textarea id="area" placeholder="Enter your comment"></textarea>
+    
+    <button id="submit">Submit </button>
+	</form>
+</body>
+</html>
